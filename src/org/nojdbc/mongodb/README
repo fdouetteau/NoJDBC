@@ -1,0 +1,5 @@
+
+
+Known Limitations
+
+_id field is forced to be of the 'String' type. 
