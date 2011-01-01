@@ -24,6 +24,7 @@ public interface Collection {
 	public Document newDocument(String id); 
 	
 	/**
+	 * TODO add separate save / commit semantic
 	 * Save a document. 
 	 * @param doc
 	 */

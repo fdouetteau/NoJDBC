@@ -1,6 +1,5 @@
 package org.nojdbc.lucene;
 import java.io.File;
-import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -8,8 +7,11 @@ import java.util.Set;
 import org.nojdbc.Collection;
 import org.nojdbc.Store;
 
-
-public class LuceneStore implements Store {
+/**
+ * @author Florian Douetteau
+ * TODO: should refactor with one store == one index ??
+ */
+public 	class LuceneStore implements Store {
 	
 	static final String idFieldName = "_id"; 
 

@@ -2,11 +2,13 @@ package org.nojdbc.mongodb;
 
 import java.util.Set;
 
-import org.bson.types.ObjectId;
 import org.nojdbc.Document;
 
 import com.mongodb.DBObject;
 
+/**
+ * @author Florian Douetteau
+ */
 class MongoDBDocument implements Document {
 
 	DBObject object; 

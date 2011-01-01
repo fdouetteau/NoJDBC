@@ -6,6 +6,9 @@ import org.jcouchdb.db.Database;
 import org.nojdbc.Collection;
 import org.nojdbc.Store;
 
+/**
+ * @author Florian Douetteau
+ */
 public class CouchDBStore extends Database implements Store {
 
 	public CouchDBStore(String database) {

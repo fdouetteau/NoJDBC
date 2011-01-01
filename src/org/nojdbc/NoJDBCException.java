@@ -9,6 +9,10 @@ package org.nojdbc;
  */
 public class NoJDBCException extends RuntimeException{
 
+	public NoJDBCException(String message) {
+		super(message);
+	}
+	
 	public NoJDBCException(Throwable cause) {
 		super(cause);
 	}

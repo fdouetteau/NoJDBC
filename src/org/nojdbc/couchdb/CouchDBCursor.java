@@ -7,6 +7,9 @@ import org.jcouchdb.document.ViewResult;
 import org.nojdbc.Cursor;
 import org.nojdbc.Document;
 
+/**
+ * @author Florian Douetteau
+ */
 class CouchDBCursor implements Cursor {
 
 	ViewResult<CouchDBDocument> viewResult; 

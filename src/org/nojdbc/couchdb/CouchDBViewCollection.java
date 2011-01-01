@@ -5,6 +5,9 @@ import org.nojdbc.Collection;
 import org.nojdbc.Cursor;
 import org.nojdbc.Document;
 
+/**
+ * @author Florian Douetteau
+ */
 public class CouchDBViewCollection extends CouchDBAllDocsCollection implements Collection {
 
 	String view; 

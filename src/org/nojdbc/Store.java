@@ -1,6 +1,9 @@
 package org.nojdbc;
 import java.util.Set;
 
+/**
+ * @author Florian Douetteau
+ */
 public interface Store {
 
 	/**

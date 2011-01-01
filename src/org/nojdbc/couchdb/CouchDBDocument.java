@@ -5,6 +5,9 @@ import java.util.Set;
 
 import org.nojdbc.Document;
 
+/**
+ * @author Florian Douetteau
+ */
 public class CouchDBDocument extends HashMap<String, Object> implements Document {
 
 	/**

@@ -12,6 +12,9 @@ import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.Fieldable;
 
+/**
+ * @author Florian Douetteau
+ */
 public class LuceneDocument implements org.nojdbc.Document {
 
 	String id; 

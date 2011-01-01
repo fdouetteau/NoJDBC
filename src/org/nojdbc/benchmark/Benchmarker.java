@@ -7,6 +7,9 @@ import org.nojdbc.Factory;
 import org.nojdbc.Factory.StoreException;
 import org.nojdbc.Store;
 
+/**
+ * @author Florian Douetteau
+ */
 public class Benchmarker {
 
 	public static class Result {
@@ -49,8 +52,9 @@ public class Benchmarker {
 	public static void main(String[] args) {
 		try {
 			Benchmarker bench = new Benchmarker(); 
-			System.err.println(bench.simpleBenchmark("Lucene", "/tmp/lucene-tmp", 100000).toString()); 
-			System.err.println(bench.simpleBenchmark("MongoDB", "db", 100000).toString()); 
+			System.err.println(bench.simpleBenchmark("Lucene", "/tmp/lucene-tmp", 1000).toString()); 
+			System.err.println(bench.simpleBenchmark("Redis", "db", 1000).toString()); 
+			//System.err.println(bench.simpleBenchmark("Riak", "localhost", 1000).toString()); 
 			System.err.println(bench.simpleBenchmark("Lucene", "/tmp/lucene-tmp", 100000).toString()); 
 
 		} catch (StoreException e) {

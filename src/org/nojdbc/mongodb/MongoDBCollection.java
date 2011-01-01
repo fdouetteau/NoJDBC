@@ -1,6 +1,5 @@
 package org.nojdbc.mongodb;
 
-import org.bson.types.ObjectId;
 import org.nojdbc.Collection;
 import org.nojdbc.Cursor;
 import org.nojdbc.Document;
@@ -10,6 +9,9 @@ import com.mongodb.DBCollection;
 import com.mongodb.DBCursor;
 import com.mongodb.DBObject;
 
+/**
+ * @author Florian Douetteau
+ */
 class MongoDBCollection implements Collection {
 
 	DBCollection c; 

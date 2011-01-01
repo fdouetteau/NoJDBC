@@ -3,12 +3,10 @@ package org.nojdbc.lucene;
 import java.io.File;
 import java.io.IOException;
 
-import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.index.IndexReader;
 import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.Term;
-import org.apache.lucene.queryParser.QueryParser;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Searcher;
 import org.apache.lucene.search.TermQuery;
@@ -19,6 +17,9 @@ import org.nojdbc.Collection;
 import org.nojdbc.Cursor;
 import org.nojdbc.Document;
 
+/**
+ * @author Florian Douetteau
+ */
 public class LuceneCollection implements Collection {
 	IndexWriter writer; 
 	IndexReader reader; 

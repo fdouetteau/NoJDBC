@@ -5,6 +5,9 @@ import org.nojdbc.Document;
 
 import com.mongodb.DBCursor;
 
+/**
+ * @author Florian Douetteau
+ */
 class MongoDBCursor implements Cursor {
 
 	DBCursor cursor; 
