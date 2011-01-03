@@ -52,8 +52,9 @@ public class Benchmarker {
 	public static void main(String[] args) {
 		try {
 			Benchmarker bench = new Benchmarker(); 
-			System.err.println(bench.simpleBenchmark("Lucene", "/tmp/lucene-tmp", 1000).toString()); 
-			System.err.println(bench.simpleBenchmark("Redis", "db", 1000).toString()); 
+			System.err.println(bench.simpleBenchmark("Lucene", "/tmp/lucene-tmp", 10).toString()); 
+			System.err.println(bench.simpleBenchmark("HBase", "192.168.0.9:9090", 10).toString());
+			//System.err.println(bench.simpleBenchmark("Redis", "db", 1000).toString()); 
 			//System.err.println(bench.simpleBenchmark("Riak", "localhost", 1000).toString()); 
 			System.err.println(bench.simpleBenchmark("Lucene", "/tmp/lucene-tmp", 100000).toString()); 
 

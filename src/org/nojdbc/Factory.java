@@ -1,6 +1,7 @@
 package org.nojdbc;
 
 import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 
 
 /**
@@ -43,8 +44,11 @@ public class Factory {
 		
 		Store store = (Store) constructor.newInstance(databasename);
 		
-		return store; 
+		return store;
 		} catch (Throwable t) {
+			if (t instanceof InvocationTargetException) {
+				t = t.getCause(); 
+			}
 			throw new StoreException(t); 
 		}
 	}
